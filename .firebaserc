@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "empleados-d85e5": {
+      "hosting": {
+        "proyEmpleados": [
+          "empleados-d85e5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "empleados-d85e5"
+  }
+}

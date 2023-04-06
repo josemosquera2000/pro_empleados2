@@ -1,0 +1,12 @@
+h2{
+  color: white;
+  text-align: center;
+}
+button
+{
+  margin-right: 25px;
+}
+.bs-danger-rgb {
+  background-color: red;
+color: white;
+}

@@ -1,0 +1,31 @@
+<div class="container pt-4.8">
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3">
+      <div class="card text-center">
+        <div class="card-body">
+          <h3 >Actualice la Informacion</h3>
+          <div *ngIf="submitted && editarEmpleados.invalid" class="spinner-border text-primary float-rigth" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <form class="mt-4" [formGroup]="editarEmpleados" (ngSubmit)="actualizarEmpleado()">
+            <input type="number" class="form-control form-control-lg" formControlName="documento" placeholder="Documento">
+            <div class="row">
+              <div class="col">
+                <input capitalize type="text" class="form-control form-control-lg mt-4" formControlName="nombre" placeholder="Nombre">
+              </div>
+              <div class="col">
+                <input capitalize type="text" class="form-control form-control-lg mt-4" formControlName="apellido" placeholder="Apellido">
+              </div>
+            </div>
+            <br>
+            <input type="number" class="form-control form-control-lg" formControlName="salario" placeholder="Salario">
+            <div class="mt-3">
+                <button type="text" class="btn btn-secondary btn-lg " routerLink="\lista-empleados">Volver</button>
+                <button type="submit" class="btn btn-dark btn-lg ">Actualizar</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
